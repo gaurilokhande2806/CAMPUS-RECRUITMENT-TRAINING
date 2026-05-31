@@ -313,3 +313,103 @@
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import java.util.Scanner;
+
+// public class SubArray {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the size of the array:");
+//         int size = sc.nextInt();
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the elements of the array:");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+        
+//         System.out.println("\n--- All SubArrays ---");
+
+//         //METHOD 1
+//         // for(int i = 0; i < size; i++ ){
+//         //     for(int j=i; j < size; j++){
+//         //         for(int k = i; k<=j ; k++){
+//         //             System.out.println(arr[k] + " ");
+//         //         }
+
+//         //         System.err.println(" \t");
+
+//         //     }
+//         // }
+
+
+//         //METHOD 2
+//         // for (int i = 0; i < size; i++) {
+//         //     StringBuilder sb = new StringBuilder();       // reset for each start
+//         //     for (int j = i; j < size; j++) {
+//         //         sb.append(arr[j]).append(" ");            // grow the subarray
+//         //         System.out.println("[" + sb.toString().trim() + "]"); // print each
+//         //     }
+//         // }
+        
+//         //METHOD 3
+//         // int i=4;
+//         // int k=0;
+//         // for(i=0; i<4;i++){
+//         //     for(int j=k; j<=i; j++){
+//         //         System.out.println(arr[j]+" ");
+//         //         if(i==3 && k<3){
+//         //             k++;
+//         //             i=k;
+//         //         }
+//         //     }
+//         //     System.out.println();
+//         // }
+        
+
+//         //METHOD 4
+//         int k = 0;
+//         for (int i = 0; i < size; i++) {
+//             for (int j = k; j <= i; j++) {
+//                 System.out.print(arr[j] + " ");   // print, not println
+//             }
+//             System.out.println();
+//             if (i == size - 1 && k < size - 1) {  // generalized condition
+//                 k++;
+//                 i = k - 1;   // k-1 because i++ in for will make it k
+//             }
+//         }
+//         sc.close();
+//     }
+// }
+
+
+// //Output of the code is 2 2
+// public class main{
+//     public static void main(String[] args) {
+//         int i=0;
+//         int j=0;
+//         for(i=0; i<2;i++)
+//             for(j=0; j<2; j++);
+//         System.err.println(i+" "+j);
+//     }
+// }
