@@ -1,0 +1,24 @@
+# Maven target directory (compiled binaries)
+backend/target/
+target/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse files
+.metadata
+.classpath
+.project
+.settings/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Log files
+*.log
